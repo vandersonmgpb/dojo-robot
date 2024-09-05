@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.0 on win32)" generated="2024-09-05T07:18:34.095127" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\Vanderson\Documents\QA-Coders\dojo-robot\login.robot">
+<test id="s1-t1" name="Validar Login" line="13">
+<kw name="Realizar Login">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-09-05T07:18:34.671444" level="INFO">${body} = {'mail': 'sysadmin@qacoders.com', 'password': '1234@Test'}</msg>
+<var>${body}</var>
+<arg>mail=sysadmin@qacoders.com</arg>
+<arg>password=1234@Test</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-09-05T07:18:34.671444" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-05T07:18:34.671444" level="INFO">{'mail': 'sysadmin@qacoders.com', 'password': '1234@Test'}</msg>
+<arg>${body}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-05T07:18:34.671444" elapsed="0.000000"/>
+</kw>
+<kw name="Criar sessao">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-09-05T07:18:34.673555" level="INFO">${headers} = {'accept': 'application/json', 'Content-Type': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>accept=application/json</arg>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-09-05T07:18:34.673555" elapsed="0.000000"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-09-05T07:18:34.673555" level="INFO">Creating Session using : alias=develop, url=https://the-mentalists.qacoders-academy.com.br/api/, headers={'accept': 'application/json', 'Content-Type': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<arg>alias=develop</arg>
+<arg>url=${baseUrl}</arg>
+<arg>headers=${headers}</arg>
+<arg>verify=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-09-05T07:18:34.673555" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-05T07:18:34.671444" elapsed="0.002111"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2024-09-05T07:18:35.979758" level="INFO">POST Request : url=https://the-mentalists.qacoders-academy.com.br/api/login 
+ path_url=/api/login 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '58'} 
+ body=b'{"mail": "sysadmin@qacoders.com", "password": "1234@Test"}' 
+ </msg>
+<msg time="2024-09-05T07:18:35.979758" level="INFO">POST Response : url=https://the-mentalists.qacoders-academy.com.br/api/login 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Thu, 05 Sep 2024 10:19:47 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS, PUT, PATCH, DELETE', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization', 'ETag': 'W/"534-ngrj1aVHk4oxUXdpWnib14xNwPw"', 'Content-Encoding': 'gzip'} 
+ body={"msg":"Olá Qa-Coders-SYSADMIN, autenticação autorizada com sucesso!","user":{"_id":"653310f323caa74ea4c6a701","fullName":"Qa-Coders-SYSADMIN","mail":"sysadmin@qacoders.com","password":"$2b$10$FcGyn1Daac3TWuDkrk3c4OpWT.AqqtZErNPBddI9Zxd9zNCGOTcmq","accessProfile":"SYSADMIN","cpf":"11111111111","status":true,"audit":[{"registeredBy":{"userId":"111111111111111111","userLogin":"sysadmin@qacoders.com"},"registrationDate":"sexta-feira, 20/10/2023, 20:44:51 BRT","registrationNumber":"01","companyId":"Qa.Coders","_id":"653310f323caa74ea4c6a702"}],"__v":0},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTMzMTBmMzIzY2FhNzRlYTRjNmE3MDEiLCJmdWxsTmFtZSI6IlFhLUNvZGVycy1TWVNBRE1JTiIsIm1haWwiOiJzeXNhZG1pbkBxYWNvZGVycy5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRGY0d5bjFEYWFjM1RXdURrcmszYzRPcFdULkFxcXRaRXJOUEJkZEk5WnhkOXpOQ0dPVGNtcSIsImFjY2Vzc1Byb2ZpbGUiOiJTWVNBRE1JTiIsImNwZiI6IjExMTExMTExMTExIiwic3RhdHVzIjp0cnVlLCJhdWRpdCI6W3sicmVnaXN0ZXJlZEJ5Ijp7InVzZXJJZCI6IjExMTExMTExMTExMTExMTExMSIsInVzZXJMb2dpbiI6InN5c2FkbWluQHFhY29kZXJzLmNvbSJ9LCJyZWdpc3RyYXRpb25EYXRlIjoic2V4dGEtZmVpcmEsIDIwLzEwLzIwMjMsIDIwOjQ0OjUxIEJSVCIsInJlZ2lzdHJhdGlvbk51bWJlciI6IjAxIiwiY29tcGFueUlkIjoiUWEuQ29kZXJzIiwiX2lkIjoiNjUzMzEwZjMyM2NhYTc0ZWE0YzZhNzAyIn1dLCJfX3YiOjAsImlhdCI6MTcyNTUzMTU4NywiZXhwIjoxNzI1NjE3OTg3fQ.R7R5XIsuTn8ukg2vVbyINY11pHHPWfrQaPwKv_7JFrs"} 
+ </msg>
+<msg time="2024-09-05T07:18:35.979758" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
+<var>${resposta}</var>
+<arg>alias=develop</arg>
+<arg>url=/login</arg>
+<arg>json=${body}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-09-05T07:18:34.673555" elapsed="1.306203"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${resposta.json()["token"]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-05T07:18:35.979758" elapsed="0.000000"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${resposta}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-09-05T07:18:35.979758" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-05T07:18:34.659213" elapsed="1.320545"/>
+</kw>
+<status status="PASS" start="2024-09-05T07:18:34.635706" elapsed="1.344052"/>
+</test>
+<doc>Pegar token</doc>
+<status status="PASS" start="2024-09-05T07:18:34.095127" elapsed="1.884631"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
