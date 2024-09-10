@@ -2,7 +2,7 @@
 Documentation            Teste Projeeto
 
 *** Variables ***
-${nome}        Fulnao de Tall
+${nome}        Fulano de Tall
 
 *** Test Cases ***
 Imprimir Nome no Terminal

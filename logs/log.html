@@ -5,60 +5,16 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 7.0.1 (Python 3.12.0 on win32)" name="Generator">
+<meta content="Robot Framework 6.1.1 (Python 3.12.0 on win32)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
-<style media="all">
-:root {
-    --text-color: black;
-    --background-color: white;
-    --primary-color: #ddd;
-    --secondary-color: #ccc;
-    --link-color: #15c;
-    --link-hover-color: #61c;
-    --highlight-color: #eee;
-    --target-color: #f9f9f9;
-    --pass-color: #97bd61;
-    --fail-color: #ce3e01;
-    --warn-color: #fed84f;
-    --pass-link-color: #098a09;
-    --warn-link-color: #927201;
-    --fail-link-color: #ce3e01;
-    --ascending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
-    --descending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
-    }
-}
-[data-theme="dark"] {
-    --text-color: #e2e1d7;
-    --background-color: #1c2227;
-    --primary-color: #26373b;
-    --secondary-color: #424f5a;
-    --link-color: #8cc4ff;
-    --link-hover-color: #bb86fc;
-    --highlight-color: #002b36;
-    --target-color: #1a252e;
-    --pass-link-color: #97bd61;
-    --warn-link-color: #fed84f;
-    --fail-link-color: #ff9b8f;
-    --ascending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAAfn5+////f/cqYgAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
-    --descending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAA////fn5+K6jOaAAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
-}
+<style media="all" type="text/css">
 /* Generic and misc styles */
 body {
     font-family: Helvetica, sans-serif;
     font-size: 0.8em;
-    color: black; /* Fallback value */
-    color: var(--text-color);
+    color: black;
     padding: 6px;
-    background: white; /* Fallback value */
-    background: var(--background-color);
-    margin-left: 15px;
-}
-body[theme-toggled] {
-    transition: background 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
+    background: white;
 }
 table {
     table-layout: fixed;
@@ -73,37 +29,20 @@ br {
     mso-data-placement: same-cell; /* maintain line breaks in Excel */
 }
 hr {
-    background: #ccc; /* Fallback value */
-    background: var(--secondary-color);
+    background: #ccc;
     height: 1px;
     border: 0;
 }
 a, a:link, a:visited {
     text-decoration: none;
-    color: #15c; /* Fallback value */
-    color: var(--link-color);
+    color: #15c;
 }
 a > img {
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: #15c !important; /* Fallback value */
-    border-color: var(--link-color) !important;
+    border: 1px solid #15c !important;
 }
 a:hover, a:active {
     text-decoration: underline;
-    color: #61c; /* Fallback value */
-    color: var(--link-hover-color);
-}
-select {
-    background-color: white; /* Fallback value */
-    background-color: var(--background-color);
-    color: black; /* Fallback value */
-    color: var(--text-color);
-    border-width: 2px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
-    border-radius: 4px;
+    color: #61c;
 }
 .parent-name {
     font-size: 0.7em;
@@ -116,7 +55,7 @@ select {
 #header {
     width: 65em;
     height: 3em;
-    margin: 20px 0 6px 0;
+    margin: 6px 0;
 }
 h1 {
     float: left;
@@ -144,17 +83,14 @@ h2 {
 }
 /* Status text colors -- !important allows using them in links */
 .fail {
-    color: #ce3e01 !important; /* Fallback value */
-    color: var(--fail-link-color) !important;
+    color: #ce3e01 !important;
     font-weight: bold;
 }
 .pass {
-    color: #098a09 !important; /* Fallback value */
-    color: var(--pass-link-color) !important;
+    color: #098a09 !important;
 }
 .skip {
-    color: #927201 !important; /* Fallback value */
-    color: var(--warn-link-color) !important;
+    color: #927201 !important;
     font-weight: bold;
 }
 .label {
@@ -162,10 +98,8 @@ h2 {
     font-size: 0.75em;
     letter-spacing: 1px;
     white-space: nowrap;
-    color: black; /* Fallback value */
-    color: var(--text-color);
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
+    color: black;
+    background-color: #ddd;
     border-radius: 3px;
 }
 .label.debug, .label.trace, .label.error, .label.keyword {
@@ -175,18 +109,15 @@ h2 {
     font-weight: bold;
 }
 .label.pass {
-    background-color: #97bd61; /* Fallback value */
-    background-color: var(--pass-color);
+    background-color: #97bd61;
     color: #000 !important;
 }
 .label.fail, .label.error {
-    background-color: #ce3e01; /* Fallback value */
-    background-color: var(--fail-color);
+    background-color: #ce3e01;
     color: #fff !important;
 }
 .label.skip, .label.warn {
-    background-color: #fed84f; /* Fallback value */
-    background-color: var(--warn-color);
+    background-color: #fed84f;
     color: #000 !important;
 }
 /* Top right header */
@@ -215,8 +146,7 @@ h2 {
     padding: 0.3em 0;
     font-size: 0.9em;
     border-bottom-left-radius: 4px;
-    background: #ddd; /* Fallback value */
-    background: var(--primary-color);
+    background: #ddd;
 }
 /* Statistics table */
 .statistics {
@@ -226,20 +156,15 @@ h2 {
     margin-bottom: 1em;
 }
 .statistics tr:hover {
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #f4f4f4;
     cursor: pointer;
 }
 .statistics th, .statistics td {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    border: 1px solid #ccc;
     padding: 0.1em 0.3em;
 }
 .statistics th {
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
+    background-color: #ddd;
     padding: 0.2em 0.3em;
 }
 .statistics td {
@@ -275,33 +200,27 @@ th.stats-col-graph:hover {
 }
 /* Statistics graph */
 .graph, .empty-graph {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    border: 1px solid #ccc;
     width: auto;
     height: 7px;
     padding: 0;
+    background: #aaa;
 }
 .empty-graph {
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #eee;
 }
 .pass-bar, .fail-bar, .skip-bar {
     float: left;
     height: 100%;
 }
 .fail-bar {
-    background: #ce3e01; /* Fallback value */
-    background: var(--fail-color);
+    background: #ce3e01;
 }
 .pass-bar {
-    background: #97bd61; /* Fallback value */
-    background: var(--pass-color);
+    background: #97bd61;
 }
 .skip-bar {
-    background: #fed84f; /* Fallback value */
-    background: var(--warn-color);
+    background: #fed84f;
 }
 /* Tablesorter - adapted from provided Blue Skin */
 .tablesorter-header {
@@ -311,84 +230,30 @@ th.stats-col-graph:hover {
     cursor: pointer;
 }
 .tablesorter-header:hover {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--secondary-color);
+    background-color: #ccc;
 }
 .tablesorter-headerAsc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==); /* Fallback value */
-    background-image: var(--ascending-icon);
-    background-color: #ccc !important; /* Fallback value */
-    background-color: var(--secondary-color) !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
+    background-color: #ccc !important;
 }
 .tablesorter-headerDesc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==); /* Fallback value */
-    background-image: var(--descending-icon);
-    background-color: #ccc !important; /* Fallback value */
-    background-color: var(--secondary-color) !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
+    background-color: #ccc !important;
 }
 .sorter-false {
     background-image: none;
     cursor: default;
 }
 .sorter-false:hover {
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
-}
-#theme-toggle {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 28px;
-    height: 28px;
-    border: none;
-    padding: 4px;
-    z-index: 1000;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background: var(--highlight-color);
-}
-[data-theme="dark"] .dark-mode-icon,
-[data-theme="light"] .light-mode-icon {
-    display: none;
-}
-[data-theme="dark"] .light-mode-icon,
-[data-theme="light"] .dark-mode-icon {
-    display: block;
-}
-@keyframes highlight {
-    0% {
-        background: var(--primary-color)
-    }
-    100% {
-        background: var(--target-color);
-    }
-}
-:target {
-    background: var(--target-color);
-    transition: background 0.3s;
-    animation: highlight 4s;
+    background-color: #ddd;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 /* Icons are from Open Iconic <https://useiconic.com/open/>.
    Licensed under the MIT License. */
-:root {
-    --icon-filter: invert(0);
-    --icon-highlight: var(--secondary-color);
-    --elapsed-color: #666;
-}
-/* @media (prefers-color-scheme: dark) { */
-[data-theme="dark"] {
-    --icon-filter: invert(1);
-    --icon-highlight: #a39990;
-    --elapsed-color: #999;
-}
 /* Containers */
 .suite, .test, #errors {
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     padding: 0.3em 0.2em;
     margin: 0.2em 0;
 }
@@ -417,10 +282,8 @@ th.stats-col-graph:hover {
 }
 .element-header:hover {
     cursor: pointer;
-    background-color: #eee; /* Fallback value */
-    background-color: var(--highlight-color);
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    background-color: #eee;
+    border-color: #ccc;
 }
 .element-header-toggle {
     position: absolute;
@@ -430,14 +293,10 @@ th.stats-col-graph:hover {
     background-position: center;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAQAAABKxSfDAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0JChSkZz20AAAAGklEQVQI12NgQAKMDKzInP8IDhOqMk4G7AAANQwBE427PYUAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2Mmg4di0yaC04eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
     height: 10px;
     width: 10px;
     background-size: 6px 6px;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .closed > .element-header-toggle {
@@ -445,8 +304,7 @@ th.stats-col-graph:hover {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0zIDB2M2gtM3YyaDN2M2gydi0zaDN2LTJoLTN2LTNoLTJ6IiAvPgo8L3N2Zz4=), none;
 }
 .element-header:hover > .element-header-toggle {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
 }
 .element-header-right:hover ~ .element-header-toggle {
     background-color: transparent;
@@ -466,31 +324,23 @@ th.stats-col-graph:hover {
 }
 .name {
     font-weight: bold;
-    white-space: pre-wrap;
-}
-.arg, .assign {
-    white-space: pre-wrap;
 }
 .elapsed {
     float: right;
-    color: #666; /* Fallback value */
-    color: var(--elapsed-color);
+    color: #666;
     padding-left: 1em;
 }
 .link {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHlJREFUGJVtzrEJwmAQBtCn6ASuIKTIBhY2gmghBiJYB1udwk10B8FJbKMBcQFbtbkfJHrVwfu+4/idJR64Y9H7E3higj5O3S8Y44ApLnjhnXCNGhV2yNGggDJwiC02gavUbpDFvscRo4QdXOMKDHBufz3HLYKzNn4AbSkV3fncGQYAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik01Ljg4LjAzYy0uMTguMDEtLjM2LjAzLS41My4wOS0uMjcuMS0uNTMuMjUtLjc1LjQ3YS41LjUgMCAxIDAgLjY5LjY5Yy4xMS0uMTEuMjQtLjE3LjM4LS4yMi4zNS0uMTIuNzgtLjA3IDEuMDYuMjIuMzkuMzkuMzkgMS4wNCAwIDEuNDRsLTEuNSAxLjVjLS40NC40NC0uOC40OC0xLjA2LjQ3LS4yNi0uMDEtLjQxLS4xMy0uNDEtLjEzYS41LjUgMCAxIDAtLjUuODhzLjM0LjIyLjg0LjI1Yy41LjAzIDEuMi0uMTYgMS44MS0uNzhsMS41LTEuNWMuNzgtLjc4Ljc4LTIuMDQgMC0yLjgxLS4yOC0uMjgtLjYxLS40NS0uOTctLjUzLS4xOC0uMDQtLjM4LS4wNC0uNTYtLjAzem0tMiAyLjMxYy0uNS0uMDItMS4xOS4xNS0xLjc4Ljc1bC0xLjUgMS41Yy0uNzguNzgtLjc4IDIuMDQgMCAyLjgxLjU2LjU2IDEuMzYuNzIgMi4wNi40Ny4yNy0uMS41My0uMjUuNzUtLjQ3YS41LjUgMCAxIDAtLjY5LS42OWMtLjExLjExLS4yNC4xNy0uMzguMjItLjM1LjEyLS43OC4wNy0xLjA2LS4yMi0uMzktLjM5LS4zOS0xLjA0IDAtMS40NGwxLjUtMS41Yy40LS40Ljc1LS40NSAxLjAzLS40NC4yOC4wMS40Ny4wOS40Ny4wOWEuNS41IDAgMSAwIC40NC0uODhzLS4zNC0uMi0uODQtLjIyeiIKICAvPgo8L3N2Zz4=), none;
-    filter: var(--icon-filter);
 }
 .expand {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAADtJREFUGJVjYCACKDAwMByA0ljFDjAwMPxnYGB4ABVQgLL/Q+VQBB6gseGmIivCkERXhFUSWRFOSawAAEl7E3uv1iMcAAAAAElFTkSuQmCC);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0xLjUgMGwtMS41IDEuNSA0IDQgNC00LTEuNS0xLjUtMi41IDIuNS0yLjUtMi41eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxKSIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
 }
 .collapse {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAC5JREFUGJVjYCARNEAxTsn/UIyhCFkSQxG6ThQ+C5IpjWhG1yNb4YDFTdjEMAEACi8Q++9Y9TAAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik00IDBsLTQgNCAxLjUgMS41IDIuNS0yLjUgMi41IDIuNSAxLjUtMS41LTQtNHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMSkiIC8+Cjwvc3ZnPg==), none;
-    filter: var(--icon-filter);
 }
 .expand, .collapse, .link {
     float: left;
@@ -502,10 +352,7 @@ th.stats-col-graph:hover {
     background-size: 8px 8px;
     background-repeat: no-repeat;
     background-position: center;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .link {
@@ -515,8 +362,7 @@ th.stats-col-graph:hover {
     visibility: visible;
 }
 .expand:hover, .collapse:hover, .link:hover {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
 }
 /* Messages and errors */
 .messages .time, .messages .message {
@@ -557,16 +403,11 @@ th.stats-col-graph:hover {
 .message-row:hover .select-message div {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0MOzhWKZQOAAAASUlEQVQY032PsRHAIAwDX9BkicD+W8UMEqegAQJWKZ/+3sLZJhFGQEZzNaIa4ibh66En867VNaIeoP5WppNuIGoAlOm3g5VC1AdYeQv1BZPRSgAAAABJRU5ErkJggg==);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2MWg4di0xaC04em0wIDJ2MWg2di0xaC02em0wIDJ2MWg4di0xaC04em0wIDJ2MWg2di0xaC02eiIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .select-message:hover div {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
     cursor: pointer;
 }
 /* Message tables - these MUST NOT be combined together because otherwise
@@ -598,7 +439,7 @@ th.stats-col-graph:hover {
     cursor: default;
 }
 </style>
-<style media="print">
+<style media="print" type="text/css">
 body {
     background: white !important;
     padding: 0;
@@ -638,7 +479,7 @@ a:link, a:visited {
     background: #ddd !important;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 #javascript-disabled {
     width: 600px;
     margin: 100px auto 0 auto;
@@ -661,7 +502,7 @@ a:link, a:visited {
     font-style: italic;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 .doc > * {
     margin: 0.7em 1em 0.1em 1em;
     padding: 0;
@@ -673,12 +514,14 @@ a:link, a:visited {
     margin-top: 0.1em;
 }
 .doc table {
+    border: 1px solid #ccc;
     background: transparent;
     border-collapse: collapse;
     empty-cells: show;
     font-size: 0.9em;
 }
 .doc table th, .doc table td {
+    border: 1px solid #ccc;
     background: transparent;
     padding: 0.1em 0.3em;
     height: 1.2em;
@@ -688,32 +531,24 @@ a:link, a:visited {
     letter-spacing: 0.1em;
 }
 .doc pre {
-    border-radius: 2px;
     font-size: 1.1em;
     letter-spacing: 0.05em;
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #f4f4f4;
 }
 .doc code {
-    border-radius: 2px;
     padding: 0 0.2em;
     letter-spacing: 0.05em;
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #eee;
 }
 .doc li {
     list-style-position: inside;
     list-style-type: square;
 }
-.doc img, .doc table, .doc table th, .doc table td {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+.doc img {
+    border: 1px solid #ccc;
 }
 .doc hr {
-    background: #ccc; /* Fallback value */
-    background: var(--secondary-color);
+    background: #ccc;
     height: 1px;
     border: 0;
 }
@@ -1015,6 +850,7 @@ window.model = (function () {
         suite.populateSuites = createIterablePopulator('Suite');
         suite.childrenNames = ['keyword', 'suite', 'test'];
         suite.callWhenChildrenReady = function (callable) { callable(); };
+        suite.message = data.message;
         suite.children = function () {
             return suite.keywords().concat(suite.tests()).concat(suite.suites());
         };
@@ -1105,7 +941,6 @@ window.model = (function () {
             name: data.name,
             doc: data.doc,
             status: data.status,
-            message: data.message,
             times: data.times,
             id: data.parent ? data.parent.id + '-' + data.id : data.id
         };
@@ -1126,6 +961,7 @@ window.model = (function () {
                 return test.keywords();
         };
         test.tags = data.tags;
+        test.message = data.message;
         test.matchesTagPattern = function (pattern) {
             return containsTagPattern(test.tags, pattern);
         };
@@ -1136,12 +972,13 @@ window.model = (function () {
     }
     function Keyword(data) {
         var kw = createModelObject(data);
+        var flatTypes = ['RETURN', 'BREAK', 'CONTINUE'];
         kw.libname = data.libname;
         kw.fullName = (kw.libname ? kw.libname + '.' : '') + kw.name;
         kw.type = data.type;
         kw.template = 'keywordTemplate';
         kw.arguments = data.args;
-        kw.assign = data.assign + (data.assign ? ' =  ' : '');
+        kw.assign = data.assign + (data.assign ? ' =' : '');
         kw.tags = data.tags;
         kw.timeout = data.timeout;
         kw.populateKeywords = createIterablePopulator('Keyword');
@@ -1520,9 +1357,8 @@ window.testdata = function () {
     var _statistics = null;
     var LEVELS = ['TRACE', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FAIL', 'SKIP'];
     var STATUSES = ['FAIL', 'PASS', 'SKIP', 'NOT RUN'];
-    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF',
-                         'ELSE IF', 'ELSE', 'RETURN', 'VAR', 'TRY', 'EXCEPT', 'FINALLY',
-                         'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
+    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF', 'ELSE IF', 'ELSE', 'RETURN',
+                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
     function addElement(elem) {
         if (!elem.id)
             elem.id = uniqueId();
@@ -1565,7 +1401,6 @@ window.testdata = function () {
         return createKeyword(parent, element, strings, index - messages.length);
     }
     function createKeyword(parent, element, strings, index) {
-        var status = element[8];
         var kw = model.Keyword({
             parent: parent,
             type: KEYWORD_TYPES[element[0]],
@@ -1581,12 +1416,7 @@ window.testdata = function () {
                 this.doc = function () { return doc; };
                 return doc;
             },
-            status: parseStatus(status),
-            message: function () {
-                var msg = status.length == 4 ? strings.get(status[3]) : '';
-                this.message = function () { return msg; };
-                return msg;
-            },
+            status: parseStatus(element[8], strings),
             times: model.Times(times(element[8])),
             isChildrenLoaded: typeof(element[9]) !== 'number'
         });
@@ -1797,20 +1627,6 @@ window.testdata = function () {
 }();
 </script>
 <script type="text/javascript">
-const lightModeIcon = `
-<svg class="light-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
-    viewBox="0 0 24 24" fill="var(--text-color)">
-    <rect fill="none" height="24" width="24" />
-    <path
-        d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z" />
-</svg>`
-const darkModeIcon = `
-<svg class="dark-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
-    viewBox="0 0 24 24" fill="var(--text-color)">
-    <rect fill="none" height="24" width="24" />
-    <path
-        d="M11.01,3.05C6.51,3.54,3,7.36,3,12c0,4.97,4.03,9,9,9c4.63,0,8.45-3.5,8.95-8c0.09-0.79-0.78-1.42-1.54-0.95 c-0.84,0.54-1.84,0.85-2.91,0.85c-2.98,0-5.4-2.42-5.4-5.4c0-1.06,0.31-2.06,0.84-2.89C12.39,3.94,11.9,2.98,11.01,3.05z" />
-</svg>`
 function removeJavaScriptDisabledWarning() {
     // Not using jQuery here for maximum speed
     document.getElementById('javascript-disabled').style.display = 'none';
@@ -1846,10 +1662,6 @@ function setTitle(suiteName, type) {
 function addHeader() {
     var generated = util.timestamp(window.output.generated);
     $.tmpl('<h1>${title}</h1>' +
-           '<button id=theme-toggle>' +
-             lightModeIcon +
-             darkModeIcon +
-           '</button>' +
            '<div id="generated">' +
              '<span>Generated<br>${generated}</span><br>' +
              '<span id="generated-ago">${ago} ago</span>' +
@@ -1861,7 +1673,6 @@ function addHeader() {
         ago: util.createGeneratedAgoString(generated),
         title: document.title
     }).appendTo($('#header'));
-    document.getElementById('theme-toggle')?.addEventListener('click', theme.onClick);
 }
 function addReportOrLogLink(myType) {
     var url;
@@ -1990,116 +1801,30 @@ function stopPropagation(event) {
     if (event.stopPropagation)
         event.stopPropagation();
 }
-const theme = function () {
-    const storageKey = 'theme-preference';
-    const urlParams = new URLSearchParams(window.location.search);
-    var storage;
-    var theme;
-    function init(givenStorage) {
-        storage = givenStorage;
-        theme = { value: getPreference() };
-        document.body.setAttribute('data-theme', theme.value);
-        reflectPreference();
-        window.matchMedia('(prefers-color-scheme: dark)')
-            .addEventListener('change', ({matches:isDark}) => {
-                theme.value = isDark ? 'dark' : 'light';
-                setPreference();
-            });
-        window.addEventListener('storage', ({key, newValue}) => {
-            if (key === storage.fullKey(storageKey)) {
-                theme.value = newValue === 'dark' ? 'dark' : 'light';
-                setPreference();
-            }
-        });
-    }
-    function getPreference() {
-        if (urlParams.has('theme')) {
-            var urlTheme = urlParams.get('theme') === 'dark' ? 'dark' : 'light';
-            storage.set(storageKey, urlTheme);
-            urlParams.delete('theme');
-            return urlTheme;
-        }
-        if (storage.get(storageKey))
-            return storage.get(storageKey) === 'dark' ? 'dark' : 'light';
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-    function setPreference() {
-        storage.set(storageKey, theme.value);
-        reflectPreference();
-    }
-    function reflectPreference() {
-        document.body.setAttribute('data-theme', theme.value);
-        document.querySelector('#theme-toggle')?.setAttribute('aria-label', theme.value);
-        const event = new Event('theme-change', {value: theme.value});
-        document.dispatchEvent(event);
-    }
-    function onClick() {
-        theme.value = theme.value === 'light' ? 'dark' : 'light';
-        document.body.setAttribute('theme-toggled', "");
-        setPreference();
-    }
-    return {init: init, getPreference: getPreference, setPreference: setPreference,
-        reflectPreference: reflectPreference, onClick: onClick};
-}();
-</script>
-<script type="text/javascript">
-storage = function () {
-    var prefix = 'robot-framework-';
-    var storage;
-    function init(user) {
-        if (user)
-            prefix += user + '-';
-        storage = getStorage();
-    }
-    function getStorage() {
-        // Use localStorage if it's accessible, normal object otherwise.
-        // Inspired by https://stackoverflow.com/questions/11214404
-        try {
-            localStorage.setItem(prefix, prefix);
-            localStorage.removeItem(prefix);
-            return localStorage;
-        } catch (exception) {
-            return {};
-        }
-    }
-    function get(key, defaultValue) {
-        var value = storage[fullKey(key)];
-        if (typeof value === 'undefined')
-            return defaultValue;
-        return value;
-    }
-    function set(key, value) {
-        storage[fullKey(key)] = value;
-    }
-    function fullKey(key) {
-        return prefix + key;
-    }
-    return {init: init, get: get, set: set, fullKey: fullKey};
-}();
 </script>
 <script type="text/javascript">
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,4,[],[1,0,1480],[],[[5,0,0,[],[1,619,858],[[0,6,0,0,0,0,0,0,[1,637,829],[[0,7,0,0,0,0,8,0,[1,637,348],[[0,9,10,0,11,12,13,0,[1,642,1],[[643,2,14]]],[0,15,0,0,0,0,0,0,[1,643,0],[[0,9,10,0,11,16,17,0,[1,643,0],[[643,2,18]]],[0,19,20,0,21,22,0,0,[1,643,0],[[643,2,23]]]]],[0,24,20,0,25,26,27,0,[1,643,342],[[985,2,28],[985,2,29],[985,2,30]]],[0,31,20,0,32,33,0,0,[1,985,0],[]],[8,0,0,0,0,34,0,0,[1,985,0],[]],[985,2,35]]],[0,36,20,0,37,38,0,0,[1,985,481],[[1454,2,39],[1454,2,40]]]]]]]],[],[1,1,0,0]];
+window.output["suite"] = [1,2,3,4,[],[1,0,1774],[],[[5,0,0,[],[1,158,796],[[0,6,0,0,0,0,0,0,[1,160,793],[[0,7,0,0,0,0,8,0,[1,160,713],[[0,9,10,0,11,12,13,0,[1,160,1],[[161,2,14]]],[0,15,0,0,0,0,0,0,[1,161,5],[[0,9,10,0,11,16,17,0,[1,162,3],[[164,2,18]]],[0,19,20,0,21,22,0,0,[1,165,1],[[165,2,23]]]]],[0,24,20,0,25,26,27,0,[1,166,706],[[872,2,28],[872,2,29],[872,2,30]]],[0,31,20,0,32,33,0,0,[1,872,0],[]],[8,0,0,0,0,34,0,0,[1,872,0],[]],[873,2,35]]],[0,9,10,0,11,36,13,0,[1,873,0],[[873,2,37]]],[0,38,20,0,39,40,0,0,[1,873,80],[[953,2,41],[953,2,42]]]]]]],[43,0,0,[],[1,956,816],[[0,44,0,0,0,0,0,0,[1,957,814],[[0,7,0,0,0,0,8,0,[1,957,715],[[0,9,10,0,11,12,13,0,[1,957,0],[[957,2,14]]],[0,15,0,0,0,0,0,0,[1,957,2],[[0,9,10,0,11,16,17,0,[1,958,0],[[958,2,18]]],[0,19,20,0,21,22,0,0,[1,958,1],[[958,2,23]]]]],[0,24,20,0,25,26,27,0,[1,959,711],[[1669,2,28],[1669,2,45],[1670,2,30]]],[0,31,20,0,32,33,0,0,[1,1670,1],[]],[8,0,0,0,0,34,0,0,[1,1671,0],[]],[1672,2,35]]],[0,9,10,0,11,46,13,0,[1,1672,1],[[1673,2,47]]],[0,38,20,0,39,40,0,0,[1,1673,98],[[1771,2,48],[1771,2,49]]]]]]]],[],[2,2,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*Get","*C:\\Users\\Vanderson\\Documents\\QA-Coders\\dojo-robot\\get.robot","*../get.robot","*<p>Pegar token\x3c/p>","*Listar usuários","*Listagem Users","*Pegar Token","*${token}","*Create Dictionary","*BuiltIn","*<p>Creates and returns a dictionary based on the given <code>items\x3c/code>.\x3c/p>","*mail=sysadmin@qacoders.com    password=1234@Test","*${body}","*${body} = {'mail': 'sysadmin@qacoders.com', 'password': '1234@Test'}","*Criar Sessao","*accept=application/json    Content-Type=application/json","*${headers}","*${headers} = {'accept': 'application/json', 'Content-Type': 'application/json'}","*Create Session","*RequestsLibrary","*<p>Create Session: create a HTTP session to a server\x3c/p>","*alias=develop    url=${baseUrl}    headers=${headers}    verify=true","eNptjTFuwzAMRa/CTYtsdTagyXuX+gKMzMRqbVEVqSBG0btHRjKa28N/eBwLocZ0gy8SiZygykED4BpR/Ex3WjlbqGX1i2qWwTldqNsoaVNEpf/FwDMV6TDgTNveB976S3GYo7OwEB6j/zMYAmU1AxjMeY2h/eXkvoWTsWBGTtqa3bRnOnX+LZxdYP6J1Pptx6qL/+REFjRuxFXflAs/DulFdyrxuvupVDpvznSpN/8BT1BpXMw=","*POST On Session","*<p>Sends a POST request on a previously created HTTP Session.\x3c/p>","*alias=develop    url=/login    json=${body}","*${resposta}","*POST Request : url=https://the-mentalists.qacoders-academy.com.br/api/login \n path_url=/api/login \n headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '58'} \n body=b'{\"mail\": \"sysadmin@qacoders.com\", \"password\": \"1234@Test\"}' \n ","eNp9VOuOm0YU/t+noCjStpWxAdub2NVKtb2YxTVgY2wuVVUNM2Nzh2VgbVjlYar+6IPkxTrjTZpNqhRpBDPnO9/5zmXYmDubszApi5xgbso1VXoX1nVJpoNBHWIhw3kN0ojUpP8IYIFwRQQAAcJZ24dF1g+qASijQVqcopz7jiM1qBtyJ4tij6swIEV+Z/5Kz0MMmOvd880OV0+4uplyNzl1uQykvvSuL3I/7IMmr5sfb3rczT2oMQPoRd7jxAm3wyUni/KIk6SpOJnKbzlVtxlwUeQ11SfYbXl1AGWZRhDUUZEPYhr7Zw6GoCK4vmvqo/COudgVyMkRV4KS02yi/MT8YNjkCUYfKXMMGQMzJBiXAk3/CTObK2yKM64wEuYtsyqXssKEMNMMQvolMEFVkQqzNC3OgllFNEWG/OmbGB3XYYEIA6mK3eM2tB89ztzYmmns6HbPzmb24qHH3StrxVa+yfTwUmLG9BK4x7mChR8bTGoq2YnqsMe9rliPYzxlTd8NFVFF3bVyLIBig2thnAE/Ho4ElKhjlRTVbCsTZz8/HXGUymgRPVYK/7oPr2t66qLy5j1tfVCg9u6Zz8iJn/Jm+uFPbguo9Osk7bzd7F7XjB4HGsZAm/fh7w9/FWx7FYQAR6eMIw1LuPie7/ENwRU/feb/iBDlux0Ph5J4HMpDCMDbEQYjeAveihIFHps0NUCGKeq/Aak9A1FKbaQlAGVR/sun8WZjTc0lIORcVCzIGzl4I4lvllBtc+keADi0neY+qZIhHJmlY/dnj4+1r1TGZo6QNvEvaNIZC9W0YfZImcC1W5uqOEYpU/NKAyyP9ED6/NCzlyvET+uqwdS5QVHNT3975it8oteQjd+8ZQVghdDQl+6fWZh1zS7lN1N83/tIWV3bzi4dw+JLDQTa4Ar06KUbSOKAXr0h+56ORtOxxM0tm//S1WiygDWFv9adcpcgb6/StqD/Unh6/r8Nk/n3v1PIH0/8VKTC6iLBTDluV2GgwsiMVtq+0yQj0oiWW2O40G61pHQPi9WkT0FH4GwpSJMNW+90e57pndZ58jI0Oiv1bCs2MmWo3yvRerHKkHMhdras/R0lSZfhem88+eqhha1kOwdjbinSymaBMikEzpkF77BrhL4qlUEyv3jOJ/w4DmSRcZ491+iQPGl9Jizatl60vegLS/VENA7ipeI5y1iXLBftrQpmpPM6awOXaL9OlhfoWsByV+ZeWSW+koydPExMtzS3ItocVKOGO6ZlGXvyoYPSvA1kvwzUPdP1lV7j7Ec0fqxcdPvz0qJzBIdWiB4OnRaXIswPKdUcIscqEdXrDEkEs0MOXEP03VXqK6sxxb3V8kNH96trTl9x/ruYthecHsioDFj83BhDeZkETtpsH5ahJ08Sau/WmfEU7FYTGrv1HVRSTa3nWmUgjxX6TrW4iKB8GCFVqf3sUMJMIdq9dl53Cl3aWY/1696Mt6IZ7y+astodFiw+1SynHXqgOanpU5CMpcBZpfBai9k1f6qhhuqywfs0YXH2jtJsP+pidld+OTfifafTeH6st7pshJ4NRd9RRK/z6SzNWi2XENV/dIdeZMYzWvM0ZDXUbdga9mlEZ0w22nPku+GZ8l0MOrSm7dG59IbHbb9xhcxYjfZ2Nr7Nl7C7CEf1sqF/ygusT003rm9HNnGOa6M58ezf+Q9F+H8I","*${resposta} = &lt;Response [200]&gt;","*Status Should Be","*<p>Fails if response status code is different than the expected.\x3c/p>","*200    ${resposta}","*${resposta.json()[\"token\"]}","*${token} = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTMzMTBmMzIzY2FhNzRlYTRjNmE3MDEiLCJmdWxsTmFtZSI6IlFhLUNvZGVycy1TWVNBRE1JTiIsIm1haWwiOiJzeXNhZG1pbkBxYWNvZGVycy5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRGY0d5bjF...","*GET On Session","*<p>Sends a GET request on a previously created HTTP Session.\x3c/p>","*alias=develop    url=/user/?token=${token}","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"]);
+window.output["strings"] = window.output["strings"].concat(["*","*Put","*C:\\Users\\a892326\\OneDrive - EDITORA E DISTRIBUIDORA EDUCACIONAL S A\\Documentos\\QA Coders\\dojo-robot\\put.robot","*../put.robot","*<p>Pegar token\x3c/p>","*Mudar status de usuario para false","*Put Status False","*Pegar Token","*${token}","*Create Dictionary","*BuiltIn","*<p>Creates and returns a dictionary based on the given <code>items\x3c/code>.\x3c/p>","*mail=sysadmin@qacoders.com, password=1234@Test","*${body}","*${body} = {'mail': 'sysadmin@qacoders.com', 'password': '1234@Test'}","*Criar Sessao","*accept=application/json, Content-Type=application/json","*${headers}","*${headers} = {'accept': 'application/json', 'Content-Type': 'application/json'}","*Create Session","*RequestsLibrary","*<p>Create Session: create a HTTP session to a server\x3c/p>","*alias=develop, url=${baseUrl}, headers=${headers}, verify=true","eNptjTFuwzAMRa/CTYtsdTagyXuX+gKMzMRqbVEVqSBG0btHRjKa28N/eBwLocZ0gy8SiZygykED4BpR/Ex3WjlbqGX1i2qWwTldqNsoaVNEpf/FwDMV6TDgTNveB976S3GYo7OwEB6j/zMYAmU1AxjMeY2h/eXkvoWTsWBGTtqa3bRnOnX+LZxdYP6J1Pptx6qL/+REFjRuxFXflAs/DulFdyrxuvupVDpvznSpN/8BT1BpXMw=","*POST On Session","*<p>Sends a POST request on a previously created HTTP Session.\x3c/p>","*alias=develop, url=/login, json=${body}","*${resposta}","*POST Request : url=https://the-mentalists.qacoders-academy.com.br/api/login \n path_url=/api/login \n headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '58'} \n body=b'{\"mail\": \"sysadmin@qacoders.com\", \"password\": \"1234@Test\"}' \n ","eNp9VNmOo0YUfc9XEDRSZ/HCYnePHbUUL9gNY8DG2CxRFBVF2exgCmxDaz4mykM+ZH4sVe6ZTM9EE0sIqu655567ea1vTcZAuMgzjJgxU5fJY1BVBR73+1WAuinKKpCEuMK9E4C5j0rcBRD4KG16ME97XtkHRdhP8mOYMd8xuAJVjR8FjuswJQI4zx71d+Q+QIC6Pj7fbVF5RuXdmLnLiMu1z/f4tz2O+WHn1VlV/3jXYe7moEIUYNaow/Acs0UFI3DCgOFH4+FozD0wS9WkwFmeVURf12yKmwMoiiSEoArzrB+R2L8wMAAlRtVjXR26b6mLWYIMH1DZlTKSTZgdqR8M6ixG/kfKDEHKQA0xQkWXpH9G1GZ31/kFlcjvThtqla5FiTCmpgmE5KtLBZV50p0kSX7p6mVIUqTIn76JUVEV5D6moKVkdpg16UeH0demrGtbctzRu4k5e+owc2klmdI3mZ5eSkyZXgJ3GLtroFONcEUkW2EVdJjXFeswlKeoyLsmIsqwvVWOBpBMcCuM1WeH4qB7Pz0fnx5sue7PB9os3ukPP5dJK56TcsO+7sPrmh7bsLh7T1rv5X7z+Mym+MiOWT358CezAUT6bZK2znYyV2Wtw4CaMpDmffj7w185Pd4E+YAhU8bgmiacf8922Bqjkh0/s3+EPuG7H4oizx1EQYQAPAwQGMB78MDxBHiok0QDKSKo/wYk9hSECbHhBgM/DbNfP403HWtiLgDGl7ykQd4I3huee7OAyybj5wBA0bTqeVzGIhzohWX2JqdT5Uqltp76vjxyr/6o1WZL3YTpiTCBW7fWZX4IE6rmlQZYHMgF//lH7l5WiB1XJRl/FtR+WLHj357ZEh3JGtLxmza0ALQQsv+l+2cWal3Rpfxmiu87HynLW9vp0lEsulage0BhCTpk6fo81yerJ9Lv8WAwHvLM1DDZL121OvVoU9hb3Ql3AbLmJm0Dei+FJ/f/2zCBff87gfxxZsccEVblMaLKUaME3hKGeqjIu1bmtVDGcmYM4Uy+l+PC3s+UUY+ADsDaEJAsaKbaquY0VVu5dYRFoLVG4phGpKWSqM6lcDVTUt+6YjNdVO6WkCSLYLXTzu5y38CGN629NjUkXjFpoJQPgHWhwVtka4G75Asvnl4d6xN+GHkCRzkvjq21vjBqXCos3DROuLmqM2PpcP7QixaSYy0ilTdsf2eUMMWt0xpruPB3q3hxhbYBDFvRd5ISu1I8tLIg1u1C33D+er/UKrilWhaRI+xbyE8bT3ALb7mjur7Sq13ckMSPpKtqfn7k8BJC0Qj8p30rRwUHs31CNAe+ZRQ+0WuJOITpPgO2xrm2kriSMiS4Bznbt+Ss3HL6ivPfh2p7wame4BcejZ9pQygsYs9K6s3TInCEUUzs7SrVzt5WGZHYjWv5BdHUOLZReMJQIu9EjvIQCvuBv5QqN90XMJWwPJcvq1Yij3xRI/V21qMNp0e7qywp2/2MxieahaT1n0hOy+TsxUPes5QE3moxueVPNFRwuajRLolpnJ0l1ZuPuqjdFl7utWjXqiSeG6mNKmiBY0LOtSTOaV0yS5NGznif6D/YohPq0YTUPAloDVUTNpoZD/W5ymnNJXTt4EL4rlorC+r8yGntRjxsehtrvnMjPX047bdG+s71FDEtzSlUrJNpjfB1s4jNPJuB2R6z9L/zH4ghfgk=","*${resposta} = &lt;Response [200]&gt;","*Status Should Be","*<p>Fails if response status code is different than the expected.\x3c/p>","*200, ${resposta}","*${resposta.json()[\"token\"]}","*${token} = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTMzMTBmMzIzY2FhNzRlYTRjNmE3MDEiLCJmdWxsTmFtZSI6IlFhLUNvZGVycy1TWVNBRE1JTiIsIm1haWwiOiJzeXNhZG1pbkBxYWNvZGVycy5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRGY0d5bjF...","*status=false","*${body} = {'status': 'false'}","*PUT On Session","*<p>Sends a PUT request on a previously created HTTP Session.\x3c/p>","*alias=develop, url=/user/status/${id_user}?token=${token}, json=${body}","eNrtVctu4zgQvO9XGLn4MrYleZTAAYKBH5IjrUVHst6XBUnR0VuMRccWB/PvSzqzs8AcFvsBOTQIsktd1Q0V+iXwRx55O5OejR5H51P9lDNG+8fZjOVk0pCWwbroWT99g7jLyKmfQAwz0gxT3DVTdJpBWszOPTnNegbZuZ/d60cdo68KOmJNhfD+QSFYg/eLb6yrSPtEBjtHW1zsC9sKuKWCwuqt1tPx2rq3KhqHa3sxFaAjjFwBsjTgO9zxV43DLZ5oZg64Vye+V4LGmDsbo9it7SaLrr3fmCw9iCK1me8C8J5uwwEPqh+FYOUZqu1LokbNYXSR5JzEIE+3KkXV6ppE/+D1EmmKrHlJYsAzbTGkUljhDknhXp21t02UTEelaSSRWTqqF2eBd8JNzxPuvWAzC3aVecWxB73Y3geGXaVGpUdtXu1juneV7CXcAoYPUotZJlrIsboakJZStA2krt/0gktaCP7SuDr+v2EVlwLPvTx7DrlVUgW3YS0051nk0UzojeZ9gZuwhTFQ0tiuU8PWBe7BakMu7vatp99q/gqp7QPnIC2jSPK3QMeaWaGoPrvPZp5oi0rk+a4B7+hgLwT3kEYZFZqGJPYo0nRDnLVVdgXWwq/Z1mBpE1LcGL21sS47boiwLk7p3O770lX2ZXC1DPsQriW/0KzVPHsWPW3rd1TpKorsGt9msbz1LzQwvDXPJKgryRNExtn9qUvmY+3jHZQBdwRfWjqDo4E88bGSRoaS8FT8S8vBatVM6D/G86TYl0sx8zqXM3R8PAC/0vcbRwHDpUjj/CLqXQG3NGfzqgDuzo/u1I02QVrum4e38OA1f6bInjcnf4Xt6M2PFv3VNSu/a9dwHfajP0YUsvwvabJP23za5tM2/9c2OYFy9Tx9HwfCMpPlq1hL48fRmA4s79rJ6WN/9TNtOlenyvjLaLzEmFA2MVqxtIr2VYJfeUG/jDJyrCEjEgNvGJmClNYFhqzo2lnZd63Mrru2JVg+SURFCJ2ITfhOfuaYkDDxB0r+4/sbZkfaV5ZLlLoY/xDNoC4bntD4+92H8+8eR3dHWPfk7sdYZP8GMTeTvg==","*PUT Response : url=https://the-mentalists.qacoders-academy.com.br/api/user/status/65f5cb40bfc21aa670ec2a69?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTMzMTBmMzIzY2FhNzRlYTRjNmE3MDEiLCJmdWxsTmFtZSI6IlFhLUNvZGVycy1TWVNBRE1JTiIsIm1haWwiOiJzeXNhZG1pbkBxYWNvZGVycy5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRGY0d5bjFEYWFjM1RXdURrcmszYzRPcFdULkFxcXRaRXJOUEJkZEk5WnhkOXpOQ0dPVGNtcSIsImFjY2Vzc1Byb2ZpbGUiOiJTWVNBRE1JTiIsImNwZiI6IjExMTExMTExMTExIiwic3RhdHVzIjp0cnVlLCJhdWRpdCI6W3sicmVnaXN0ZXJlZEJ5Ijp7InVzZXJJZCI6IjExMTExMTExMTExMTExMTExMSIsInVzZXJMb2dpbiI6InN5c2FkbWluQHFhY29kZXJzLmNvbSJ9LCJyZWdpc3RyYXRpb25EYXRlIjoic2V4dGEtZmVpcmEsIDIwLzEwLzIwMjMsIDIwOjQ0OjUxIEJSVCIsInJlZ2lzdHJhdGlvbk51bWJlciI6IjAxIiwiY29tcGFueUlkIjoiUWEuQ29kZXJzIiwiX2lkIjoiNjUzMzEwZjMyM2NhYTc0ZWE0YzZhNzAyIn1dLCJfX3YiOjAsImlhdCI6MTcyNTk5ODM0NywiZXhwIjoxNzI2MDg0NzQ3fQ.QWDUZjOm7qVSRmKZbJ3mrTBcJWqTW9sxQFkTonCaCVs \n status=200, reason=OK \n headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Tue, 10 Sep 2024 19:59:07 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS, PUT, PATCH, DELETE', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization', 'ETag': 'W/\"45-u5g3Ijsg0HfBjKZlewjvrjCsB2A\"', 'Content-Encoding': 'gzip'} \n body={\"msg\":\"Status do usuario atualizado com sucesso para status false.\"} \n ","*Mudar status de usuario para true","*Put Status True","eNp9VOuO2kYU/t+ncK1I21YYbAPJQrVSuRgwu7bB+F5V0XhmWN/t9QWwV3mYqj/6IHmxzrBJs0mVIln2zPnOd75zY6cdDEbHVZFnFWamTFMmd0FdF9V0MKgDzKU4q0ESVnXVfwIwR7isOAABwmnbh3na98sBKMJBkj+GGfMDU9Wgbqo7ked7TIlBlWd32j25DzCgrnfPNwdcnnB5M2VuMuJyGQh94bbPMz+ZfpPVzc83PeZmCWpMAUaDe4zAMwdcMCIvjhhhMh1Ppvwts1YMClzkWU30cUZbXB1AUSQhBHWYZ4OIxP6VgQEoK1zfNfWRu6UuRgmy6ohLTspINmH2SP1g0GQxRp8oMwwpAzXEGBccSf+Eqc3hdvkZlxhx85ZapUtR4qqiphmE5Iujgso84WZJkp85rQxJihT5y3cxCq6DHFUUtJaMHrMj/egx2s6QNfVAjia9mxmLTY9ZSg+SIX2XafNSYsr0ErjHOJyOnxpc1USyHdZBj3ldsR5DeYqavBsiogy7a+VoAMkA18LYA3Y8HHHCcXIZAmuw79L7plmIvjjDw9Q0J63Lvu7D65o+dmFx84G03s9Re/fMptUjO2W15OOfzB4Q6ddJOriH2VKR1R4DGspAmvfx749/5fR4FYQAQ6aMqRqacP4j22ObCpfs9Jl9HyLC93Y8HAr8cSgOIQDvRhiM4FvwjhcI8NgkiQpSTFD/DUjsKQgTYqvaCqA0zH77PN50rIm5AFV1zksa5I3ovxH4Nyu4bjNhCQAcGnazjMt4CEdaYRv92dNT7UmlupsjJE+8C5p06mKtGTB9Ikzg2q1dmR/DhKp5pQEWR3IhfPmRu5cVYqd1ScafBQ0Ka3b6+zNb4keyhnT85i0tAC2EjL52/8JCrQ90Kb+b4ofeJ8ry2na6dBSLLzXgjjgsQY8s3UDgB2T1hvR7OhpNxwIz1w32a1e1SX3aFPZad8JdgKy9StuD/kvhyf3/NkxkP/xBIO9P7JQnwuo8xlQ5breBv4ahFm5ls5MFNZQrOdPHcCG/lePCsRbbSZ+AjsDeE5AsqobSKcY8VTq5c8VVoHZ64hp6pKbSUFlK4cNimyL7UhnpqvYOhCRZBQ+mevLWVgtbwbAtda5LwtaggVIhAPaZBu+wowbeWij8eH5x7c/4ceSLPOU8u47aIXHSelRYuG/dcH9RFvra5dHYj1aSa68iRdAdZOolTKvO7fQdXCHzIV5doKMD3dlqprSNPSke21kQa06h7Xm0s9ZqDQ9UyypyRauDwrz1Ra/w1ybV9Y1e9eyFJH4kXRTjyyOH5xAO9QBtrE6OCh5mVkI0B8jWC0T02sMqhKmVAUflPWebeNJ2THDv5MzqyHl7zekbzn8fqu0Fp/giKnwaP1PHUFzFvp00+80qcMVJTOzdQ6qe/MN2QmK3no0Koql1Hb3wxbFE3okc5SEUrRFaS7WXWgVMpUpeyueHTiKPfFYi5XrWoj2vReZFlrYHa0HjE81i0qENyWmdnPx4LPj2NoHXWsyu+RMNNVyvGmwmMY1j2lKz/6SL2h3x5V6NzE4h8bxIaRVRDVwD8p4t8W7nkVmatXImIKL/6AzdUItmpOZJQGuoGLBVjXisLRVeW5xDzwnOhO+idrKoLB95tduPjvv+vRXLSEW1aGnVbXyON5OZ5TlPnHHathvnyM9RPJ6ZoADvXZb+d/4D0bl9kw==","*status=true","*${body} = {'status': 'true'}","eNrtVctu2zgU3c9XGNl4U9uSHKV1gGBgO5JN1ZJiRe9NQZG09TZj0Q+x6L8P6XRaoIvBfEAWFwR5j+4590IH9yXwBx55O5GODR4Hp2P9lDNGu8fJhOVk1JCWwbroWDd+g+iAybEbQQQxafoxOjTj7DiBtJicOnKcdAyyUzd50Hc6yu6VbIc0FcKHzwpBGnyY/c0OFWmfSG/l2QoVbmGBgAPVKUAHWk9HS/AAKhqHS2s2FqAdjLYCBDTHt7ntLxqbA55oZu5wr058r3QaY2o/G8VmaTU4unZ+Y7L0VRSpzXwTOOd0FfaoV/0odBaeoVq+JGrUHEYXSc5J7OTpSqVZtbgm0b94vcw0Rda8JLHDsTbrUyms2PZJsb3aS2+VKFjPStNIIrO0VS/GgXdETccT7r0gEwebyryi2INebLmBYVWpUelRm1duTN2tgl/ClcPQq9RilokWcqQu+kxLabYKpK4/9DqXtBD8pXG1/d8BikuBpl6O1yEHJVVQG9ZCc44jj2KhN5p2BWrCFsaOksZWnRqWLnCfQRtycbduPf1R81dIbe84O9MwzSR/6+hIM6ssqk/btZkn2qwSeb5pnHP2as0Ed59GmApNfRJ7NNN0Q5w1KA8F0sJ7vDJY2oQUNUYHnsFlww0R4GKX9u3ullvFLYMrMKzXcCn5hWat5ngtelrV56zS1SyyanSbxfzWv9DA0Mo8kaCuJE8QGaftT10yH2vv704ZcFvwpaXd25qTJz5S0shQEp6Kf2neg1bFQv8uniaFW87FzOtcztD2Ue/4le4+24q7vBRpnF9EvavDgWY/7xWHb+932/HXsALYwUwL3e5LdanWs3mYxm8j/2z163inLHClzwNI4bdk8NeAQpZ/kyb7sM2HbT5s839tkxMoV8/T92EgLDOa78VaGj4OhrRn+aEdHd/3VzfRxlN1rAw/DYZzhAhlI6MVS6to9xK85wX9NMBkV0NGJAbeMDIFKa0LBFlxaCdld2hldnloW4Lkk0RUhNCR2IRn8jPHhISR31PyH9/fMBvS7lkuUeqX4Q/RTHbA/VM2/H737vy7x8EdO57I3Y+hSP4D1TGSZg==","*PUT Response : url=https://the-mentalists.qacoders-academy.com.br/api/user/status/65f5cb40bfc21aa670ec2a69?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTMzMTBmMzIzY2FhNzRlYTRjNmE3MDEiLCJmdWxsTmFtZSI6IlFhLUNvZGVycy1TWVNBRE1JTiIsIm1haWwiOiJzeXNhZG1pbkBxYWNvZGVycy5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRGY0d5bjFEYWFjM1RXdURrcmszYzRPcFdULkFxcXRaRXJOUEJkZEk5WnhkOXpOQ0dPVGNtcSIsImFjY2Vzc1Byb2ZpbGUiOiJTWVNBRE1JTiIsImNwZiI6IjExMTExMTExMTExIiwic3RhdHVzIjp0cnVlLCJhdWRpdCI6W3sicmVnaXN0ZXJlZEJ5Ijp7InVzZXJJZCI6IjExMTExMTExMTExMTExMTExMSIsInVzZXJMb2dpbiI6InN5c2FkbWluQHFhY29kZXJzLmNvbSJ9LCJyZWdpc3RyYXRpb25EYXRlIjoic2V4dGEtZmVpcmEsIDIwLzEwLzIwMjMsIDIwOjQ0OjUxIEJSVCIsInJlZ2lzdHJhdGlvbk51bWJlciI6IjAxIiwiY29tcGFueUlkIjoiUWEuQ29kZXJzIiwiX2lkIjoiNjUzMzEwZjMyM2NhYTc0ZWE0YzZhNzAyIn1dLCJfX3YiOjAsImlhdCI6MTcyNTk5ODM0OCwiZXhwIjoxNzI2MDg0NzQ4fQ.KVkIdNdt2VOs8kwkH9AVZXq-TvJyHXf0Bdk5AUapa_Y \n status=200, reason=OK \n headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Tue, 10 Sep 2024 19:59:08 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS, PUT, PATCH, DELETE', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization', 'ETag': 'W/\"44-+ZXX1kbItEqRysXG0netwR/VlCw\"', 'Content-Encoding': 'gzip'} \n body={\"msg\":\"Status do usuario atualizado com sucesso para status true.\"} \n "]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:01","fail":0,"label":"All Tests","pass":1,"skip":0}],[],[{"elapsed":"00:00:01","fail":0,"id":"s1","label":"Get","name":"Get","pass":1,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:02","fail":0,"label":"All Tests","pass":2,"skip":0}],[],[{"elapsed":"00:00:02","fail":0,"id":"s1","label":"Put","name":"Put","pass":2,"skip":0}]];
 </script>
 <script type="text/javascript">
 window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1725880094794;
+window.output["baseMillis"] = 1725998272221;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 1507;
+window.output["generated"] = 1791;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
@@ -2109,7 +1834,7 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
 </script>
 <title></title>
 </head>
-<body data-theme="dark">
+<body>
 <div id="javascript-disabled">
   <h1>Opening Robot Framework log failed</h1>
   <ul>
@@ -2119,13 +1844,12 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
   </ul>
 </div>
 <script type="text/javascript">removeJavaScriptDisabledWarning();</script>
+
 <div id="header"></div>
 <div id="statistics-container"></div>
 
 <script type="text/javascript">
 $(document).ready(function() {
-    storage.init();
-    theme.init(storage);
     try {
         var topsuite = window.testdata.suite();
     } catch (error) {
@@ -2133,7 +1857,6 @@ $(document).ready(function() {
         return;
     }
     initLayout(topsuite.name, 'Log');
-    theme.reflectPreference();
     addStatistics();
     addErrors();
     addExecutionLog(topsuite);
@@ -2174,6 +1897,25 @@ function drawErrorsRecursively(errors, target) {
         // Errors may have moved scroll position. Resetting location re-scrolls.
         if (window.location.hash)
             window.location.replace(window.location.hash);
+        highlightLinkTarget();
+    }
+}
+
+function highlightLinkTarget() {
+    if (window.location.hash) {
+        var target = $(window.location.hash);
+        highlight(target);
+    }
+}
+
+function highlight(element, color) {
+    if (color === undefined)
+        color = 242;
+    if (color < 255) {
+        element.css({'background-color': 'rgb('+color+','+color+','+color+')'});
+        setTimeout(function () { highlight(element, color+1); }, 300);
+    } else {
+        element.css({'background-color': ''});
     }
 }
 
@@ -2191,6 +1933,7 @@ function makeElementVisible(id) {
             expandFailed(window.testdata.findLoaded(util.last(ids)));
             window.location.hash = id;
             document.getElementById(id).scrollIntoView();
+            highlightLinkTarget();
         }
     });
 }
@@ -2388,9 +2131,8 @@ function addExecutionLog(main) {
       <div class="element-header-left" title="${type}  {{if name}}{{html fullName}}  {{/if}}[${status}]">
         <span class="elapsed" title="Elapsed time">${times.elapsedTime}</span>
         <span class="label ${status.toLowerCase()}">${type}</span>
-        <span class="assign">{{html assign}}</span>
+        <span>{{html assign}}</span>
         <span class="name"><span class="parent-name">{{html libname}}{{if libname}} . {{/if}}</span>{{html name}}</span>
-        &nbsp;
         <span class="arg">{{html arguments}}</span>
       </div>
       <div class="element-header-right" onclick="stopPropagation(event)">
@@ -2424,12 +2166,6 @@ function addExecutionLog(main) {
           <th>Start / End / Elapsed:</th>
           <td>${times.startTime} / ${times.endTime} / ${times.elapsedTime}</td>
         </tr>
-        {{if message()}}
-        <tr>
-          <th>Message:</th>
-          <td class="message">{{html message()}}</td>
-        </tr>
-        {{/if}}
       </table>
     </div>
   </div>
@@ -2452,7 +2188,6 @@ function addExecutionLog(main) {
   <div id="log-level-selector">
   Log level:
     <select onchange="logLevelSelected(this.options[selectedIndex].value)">
-      <option value="3">WARN</option>
       <option value="2">INFO</option>
       <option value="1">DEBUG</option>
       {{if showTrace()}}<option value="0">TRACE</option>{{/if}}

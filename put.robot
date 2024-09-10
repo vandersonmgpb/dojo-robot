@@ -10,14 +10,10 @@ ${baseUrl}        https://the-mentalists.qacoders-academy.com.br/api/
 ${id_user}        65f5cb40bfc21aa670ec2a69
 
 *** Test Cases ***
-Listar usuários
-    Listagem users
-
-Contar Usuário
-    Count Users
-Pegar Usuário
-    Get User
-
+Mudar status de usuario para false
+    Put Status False
+Mudar status de usuario para true
+    Put Status True
 *** Keywords ***
 Criar Sessao
     ${headers}        Create Dictionary    accept=application/json    Content-Type=application/json
@@ -35,16 +31,17 @@ Pegar Token
     Status Should Be    200    ${resposta}
     RETURN              ${resposta.json()["token"]}    
 
-Listagem Users
-    ${token}    Pegar Token       
-    GET On Session    alias=develop    url=/user/?token=${token} 
+Put Status False
+    ${token}    Pegar Token
+    ${body}    Create Dictionary    status=false
+    PUT On Session    alias=develop    url=/user/status/${id_user}?token=${token}    json=${body}
+Put Status True
+    ${token}    Pegar Token
+    ${body}    Create Dictionary    status=true
+    PUT On Session    alias=develop    url=/user/status/${id_user}?token=${token}    json=${body}
+    
 
-Count Users
-    ${token}    Pegar Token       
-    GET On Session    alias=develop    url=/user/count?token=${token} 
-Get User
-    ${token}    Pegar Token       
-    GET On Session    alias=develop    url=/user/${id_user}?token=${token} 
+
        
     
         
